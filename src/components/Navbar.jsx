@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react"; // hamburger icons
 import { Link, useLocation } from "react-router-dom"; // React Router Link
+import logo from '../assets/logo2.png'
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -16,9 +17,14 @@ export default function Navbar() {
   return (
     <nav className="bg-green-400 fixed w-full z-50 shadow-md">
       <div className="max-w-7xl container mx-auto flex justify-between items-center p-4">
-        {/* Logo */}
-        <Link to="/" className="text-2xl font-extrabold cursor-pointer text-white">
-          Jesuloba
+        {/* Logo + Company Name */}
+        <Link to="/" className="flex items-center cursor-pointer">
+          <img 
+            src={logo} 
+            alt="Jesuloba Company Logo" 
+            className="h-10 w-10 object-contain mr-2" // Added: size and spacing
+          />
+          <span className="text-2xl font-extrabold text-white">Jesuloba</span> {/* Added span for proper styling */}
         </Link>
 
         {/* Desktop Links */}
@@ -30,7 +36,7 @@ export default function Navbar() {
                 key={link.name}
                 to={link.path}
                 className={`text-white pt-1 font-bold transition transform duration-200
-          ${isActive ? "scale-110" : "hover:scale-125"}`}
+                  ${isActive ? "scale-110" : "hover:scale-125"}`}
               >
                 {link.name}
               </Link>
@@ -41,7 +47,7 @@ export default function Navbar() {
         {/* Mobile Hamburger */}
         <div className="md:hidden flex items-center">
           <button onClick={() => setOpen(!open)}>
-            {open ? <X size={24} color="white"  /> : <Menu size={24} color="white"  />}
+            {open ? <X size={24} color="white" /> : <Menu size={24} color="white" />}
           </button>
         </div>
       </div>
