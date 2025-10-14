@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { PiSolarPanelFill } from "react-icons/pi";
 import { BiSolidZap } from "react-icons/bi";
 import { VscTools } from "react-icons/vsc";
 import { FaUserCheck } from "react-icons/fa";
+
 const services = [
   {
     icon: <PiSolarPanelFill size={40} className="text-green-500" />,
@@ -31,10 +34,14 @@ const services = [
 ];
 
 const ServicesSection = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+
   return (
     <section className="w-full py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 text-center">
-        <h2 className="text-3xl md:text-4xl font-extrabold mb-12 text-gray-800">
+        <h2 className="text-3xl md:text-4xl font-extrabold mb-12 text-gray-800" data-aos="fade-up">
           Our Services
         </h2>
 
@@ -43,6 +50,8 @@ const ServicesSection = () => {
             <div
               key={index}
               className="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center transition-transform hover:scale-105 hover:shadow-2xl"
+              data-aos="fade-up"
+              data-aos-delay={index * 150}
             >
               <div className="mb-4">{service.icon}</div>
               <h3 className="text-xl font-semibold mb-2 text-gray-800">

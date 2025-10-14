@@ -1,12 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import { motion, AnimatePresence } from "framer-motion";
 import { PiSolarPanelFill } from "react-icons/pi";
 import { BiSolidZap } from "react-icons/bi";
 import { VscTools } from "react-icons/vsc";
 import { FaUserCheck } from "react-icons/fa";
-// import { ChevronLeft, ChevronRight } from "lucide-react";
 import Testimonial from "../components/Testimonial";
+import servicesbg from "../assets/servicesbg.jpg";
 
 const services = [
   {
@@ -58,15 +57,36 @@ const Services = () => {
   return (
     <div className="w-full bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-100 overflow-hidden">
       {/* Hero Section */}
-      <section className="relative w-full h-72 bg-green-600 flex flex-col items-center justify-center text-center text-white">
-        <h1 className="text-4xl md:text-5xl font-extrabold mb-3">
-          Powering Your Future
-        </h1>
-        <p className="max-w-2xl text-lg opacity-90">
-          Explore our wide range of solar and electrical solutions designed to
-          make your energy usage smarter, safer, and more sustainable.
-        </p>
-      </section>
+        <section
+  className="relative w-full h-96 md:h-[500px] flex items-center justify-center text-center px-4"
+  style={{
+    backgroundImage: `url(${servicesbg})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+  }}
+>
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black/50 md:bg-opacity-40"></div>
+
+  {/* Optional gradient for more depth */}
+  <div className="absolute inset-0 bg-gradient-to-b from-black/10 to-black/30"></div>
+
+  {/* Text Content */}
+  <div className="relative z-10 max-w-2xl text-white">
+    <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
+      Powering Your Future
+    </h1>
+    <p className="text-lg md:text-xl opacity-90 mb-6">
+      Explore our wide range of solar, inverter, and electrical solutions designed to make your energy usage smarter, safer, and more sustainable.
+    </p>
+    <Link to="/contact">
+      <button className="bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-3 rounded-lg shadow-md transition">
+        Get Your Free Consultation
+      </button>
+    </Link>
+  </div>
+</section>
 
       {/* Services Summary */}
       <section className="max-w-7xl mx-auto px-6 py-20">
