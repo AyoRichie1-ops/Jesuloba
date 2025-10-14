@@ -50,7 +50,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="w-full bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-100 overflow-x-hidden">
+    <div className="w-full pt-10 bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-100 overflow-x-hidden">
       {/* Hero Section */}
       <section
         className="relative w-full h-96 md:h-[500px] flex items-center justify-center text-center px-4"
@@ -99,7 +99,7 @@ const About = () => {
               Founder & CEO
             </p>
             <p className="text-gray-600 dark:text-gray-400">
-              With a passion for renewable energy and reliable electrical solutions, John has been leading Jesuloba Electrical Engineering Company to deliver innovative, sustainable, and efficient energy systems across Nigeria.
+              With a passion for renewable energy and reliable electrical solutions, Micheal has been leading Jesuloba Electrical Engineering Company to deliver innovative, sustainable, and efficient energy systems across Nigeria.
             </p>
           </div>
         </section>

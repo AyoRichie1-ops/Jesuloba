@@ -13,6 +13,8 @@ import Contact from "./pages/Contact";
 import NotFound from "./pages/Notfound";
 import ScrollToTop from "./components/ScrollToTop";
 import Footer from "./components/Footer";
+import { Toaster } from 'react-hot-toast';
+import FloatingWhatsApp from "./components/FloatingWhatsapp";
 
 function App() {
   // Initialize AOS globally
@@ -24,8 +26,10 @@ function App() {
   }, []);
 
   return (
+    <>
     <Router>
       <Navbar />
+          <Toaster position="top-right" reverseOrder={false} />
       <Layout>
         <ScrollToTop />
         <Routes>
@@ -39,6 +43,8 @@ function App() {
       </Layout>
       <Footer />
     </Router>
+    <FloatingWhatsApp/>
+    </>
   );
 }
 
