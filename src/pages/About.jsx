@@ -50,10 +50,10 @@ const About = () => {
   }, []);
 
   return (
-    <div className="w-full pt-10 bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-100 overflow-x-hidden">
+    <div className="w-full pt-10  bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-100 overflow-x-hidden">
       {/* Hero Section */}
       <section
-        className="relative w-full h-96 md:h-[500px] flex items-center justify-center text-center px-4"
+        className="relative w-full  h-screen md:h-[500px] flex items-center justify-center text-center px-4"
         style={{
           backgroundImage: `url(${aboutHero})`,
           backgroundSize: "cover",

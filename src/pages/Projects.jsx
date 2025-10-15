@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import ProjectsSection from "../components/projects/ProjectSection";
 
 const Projects = () => {
-  return (
-    <div>Projectswed</div>
-  )
-}
+  return <ProjectsSection />;
+};
 
-export default Projects
+export default Projects;
