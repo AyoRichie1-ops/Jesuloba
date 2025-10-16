@@ -130,7 +130,7 @@ const Contact = () => {
           <button
             type="submit"
             disabled={loading}
-            className={`bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-3 rounded-lg shadow-md transition-all ${loading ? "cursor-not-allowed opacity-70" : ""}`}
+            className={`cursor-pointer bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-3 rounded-lg shadow-md transition-all ${loading ? "cursor-not-allowed opacity-70" : ""}`}
           >
             {loading ? "Please Wait..." : "Send Message"}
           </button>

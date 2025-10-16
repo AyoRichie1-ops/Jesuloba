@@ -51,7 +51,7 @@ const FaqSection = () => {
             >
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full flex justify-between items-center px-6 py-4 text-left font-semibold hover:bg-gray-50 dark:hover:bg-gray-700 transition"
+                className="w-full cursor-pointer flex justify-between items-center px-6 py-4 text-left font-semibold hover:bg-gray-50 dark:hover:bg-gray-700 transition"
               >
                 {faq.question}
                 <FaChevronDown

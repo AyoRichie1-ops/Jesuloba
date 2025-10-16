@@ -1,25 +1,27 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ProjectCard from "./ProjectCard";
-
+import herobg from '../../assets/herobg.jpg'
+import proj1 from '../../assets/proj1.jpg'
+import proj2 from '../../assets/proj2.jpg'
 const recentProjects = [
   {
     title: "Residential Solar Installation",
     description:
       "Installed a 5kW solar system for a 4-bedroom duplex in Lagos, cutting grid use by 85%.",
-    image: "/images/solar.jpg",
+    image: herobg,
   },
   {
-    title: "Inverter Backup for Office",
+    title: "Inverter Backup for company",
     description:
-      "Provided uninterrupted power for office equipment using a 10kVA inverter setup.",
-    image: "/images/inverter.jpg",
+      "Provided uninterrupted power for office equipment using a 30kVA inverter setup.",
+    image: proj1,
   },
   {
-    title: "Wiring & Electrical Upgrade",
+    title: "Inverter system for household",
     description:
-      "Rewired an entire apartment block ensuring safety and power efficiency.",
-    image: "/images/electrical.jpg",
+      "provided uniterrupted power supply to this household using a 5kva inverter setup.",
+    image: proj2,
   },
 ];
 

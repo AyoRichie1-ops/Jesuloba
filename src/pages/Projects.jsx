@@ -1,9 +1,14 @@
 import React from "react";
-import ProjectsSection from "../components/projects/ProjectSection";
+import ProjectHero from "../components/projects/ProjectHero";
 import AllProjects from "../components/projects/AllProjects";
 
 const Projects = () => {
-  return <AllProjects/>;
+  return (
+    <div>
+      <ProjectHero />
+      <AllProjects />
+    </div>
+  );
 };
 
 export default Projects;
