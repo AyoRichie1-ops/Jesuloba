@@ -27,7 +27,7 @@ const HomeProjects = () => {
   return (
     <section className="py-16 bg-gray-50 dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-6 text-center">
-        <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
+        <h2 className="text-3xl font-extrabold text-gray-800 dark:text-white">
           Recent Projects
         </h2>
         <p className="text-gray-600 dark:text-gray-300 mt-2">
