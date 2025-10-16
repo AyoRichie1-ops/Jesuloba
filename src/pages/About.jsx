@@ -168,7 +168,7 @@ const About = () => {
           Our experts are ready to help you transition to clean, reliable, and affordable energy.
         </p>
         <Link to="/contact">
-          <button className="bg-white text-green-600 font-semibold px-8 py-3 rounded-lg shadow-md hover:bg-gray-100 transition">
+          <button className=" cursor-pointer bg-white text-green-600 font-semibold px-8 py-3 rounded-lg shadow-md hover:bg-gray-100 transition">
             Contact Us Today
           </button>
         </Link>

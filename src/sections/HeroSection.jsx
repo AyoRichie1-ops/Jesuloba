@@ -11,7 +11,7 @@ const HeroSection = () => {
 
   return (
     <section
-      className="relative w-full h-screen flex items-center justify-center text-center text-white overflow-hidden"
+      className="relative w-100% pt-20 pb-5 h-100% flex items-center justify-center text-center text-white overflow-hidden"
     >
       {/* Background image */}
       <img
@@ -43,7 +43,7 @@ const HeroSection = () => {
 
         {/* Buttons */}
         <div
-          className="flex flex-col sm:flex-row gap-4"
+          className="flex flex-col sm:flex-row gap-4 pb-4"
           data-aos="zoom-in"
           data-aos-delay="400"
         >
