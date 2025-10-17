@@ -7,7 +7,7 @@ const allProjects = [
   {
     title: "Solar Installation at Ikeja GRA",
     description:
-      "Installed a 10kW solar system with battery backup for a luxury home in Lekki. The project included solar panel mounting, inverter setup, and energy monitoring system.",
+      "Installed a 10kW solar system with battery backup for a luxury home in Ikeja GRA. The project included solar panel mounting, inverter setup, and energy monitoring system.",
     location: "Ikeja, Lagos",
     system: "10kW Solar + 20kWh Battery Backup",
     image: herobg,
